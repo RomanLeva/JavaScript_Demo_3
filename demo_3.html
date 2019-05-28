@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo_3</title>
+    <script type="text/javascript" src="demo_3.js" ></script>
+    <style>
+        .board {border-spacing: 3px; background-color: black}
+        .board .white {background-color: white}
+        .board .pink {background-color: pink}
+        .board .blue {background-color: blue}
+        .board .green {background-color: green}
+        .board .cyan {background-color: cyan}
+        .board .darkviolet {background-color: darkviolet}
+        .board .red {background-color: red}
+        .board .yellow {background-color: yellow}
+        .board .orange {background-color: orange}
+        .board td {width: 4em; height: 4em;}
+    </style>
+</head>
+<body>
+<p>
+    Задано 8 пар скрытых цветов, откройте все клеточки выбирая по парам.
+</p>
+<table class="board">
+    <tbody>
+    <tr>
+        <td class="white" onclick="clickN('00')" id="00"></td>
+        <td class="white" onclick="clickN('01')" id="01"></td>
+        <td class="white" onclick="clickN('02')" id="02"></td>
+        <td class="white" onclick="clickN('03')" id="03"></td>
+    </tr>
+    <tr>
+        <td class="white" onclick="clickN('10')" id="10"></td>
+        <td class="white" onclick="clickN('11')" id="11"></td>
+        <td class="white" onclick="clickN('12')" id="12"></td>
+        <td class="white" onclick="clickN('13')" id="13"></td>
+    </tr>
+    <tr>
+        <td class="white" onclick="clickN('20')" id="20"></td>
+        <td class="white" onclick="clickN('21')" id="21"></td>
+        <td class="white" onclick="clickN('22')" id="22"></td>
+        <td class="white" onclick="clickN('23')" id="23"></td>
+    </tr>
+    <tr>
+        <td class="white" onclick="clickN('30')" id="30"></td>
+        <td class="white" onclick="clickN('31')" id="31"></td>
+        <td class="white" onclick="clickN('32')" id="32"></td>
+        <td class="white" onclick="clickN('33')" id="33"></td>
+    </tr>
+    </tbody>
+</table>
+<p><button type="button" onclick="play()">Играть</button></p>
+<p id="time">
+    <span id="minutes"></span>:<span id="seconds"></span>
+</p>
+</body>
+</html>
